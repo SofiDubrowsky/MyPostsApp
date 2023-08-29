@@ -20,7 +20,7 @@ Se utilizó la API pública de JSONPlaceholder para obtener una lista de posts d
 1. Clona este repositorio en tu máquina local:
 
 ```bash
-git clone [https://github.com/SofiDubrowsky/MyPostsApp.git](https://github.com/SofiDubrowsky/MyPostsApp.git)
+git clone https://github.com/SofiDubrowsky/MyPostsApp.git
 ```
 
 2. Ve al directorio del proyecto:
