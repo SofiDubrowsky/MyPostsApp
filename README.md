@@ -1,4 +1,4 @@
-# MyPostsApp
+# MyPostsApp💬
 
 ¡Bienvenido a MyPostsApp! Esta es una aplicación móvil construida utilizando React Native y Expo.
 
