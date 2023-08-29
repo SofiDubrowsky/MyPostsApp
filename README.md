@@ -29,7 +29,7 @@ cd MyPostsApp
 ```
 
 3. Instala las dependencias del proyecto:
-4. 
+   
 ```bash
 npm install
 ```
