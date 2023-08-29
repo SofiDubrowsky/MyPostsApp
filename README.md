@@ -5,6 +5,7 @@
 ## Resumen
 
 MyPostsApp te permite explorar y buscar a través de una lista de publicaciones. Puedes filtrar las publicaciones por ID de usuario y cargar más publicaciones al desplazarte. Además, puedes ver los detalles de cada publicación, incluido el título y el contenido del cuerpo de la publicación.
+Se utilizo la API pública de JSONPlaceholder para obtener una lista de posts de prueba, para visualizar en la app: [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts)
 
 ## Comenzando
 
