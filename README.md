@@ -58,9 +58,11 @@ Alternativamente, puedes escanear el código QR a continuación utilizando la ap
 ![image](https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/68efcb03-b611-4ec5-868e-dfb19b0edde7)
 
 - Utiliza la barra de búsqueda para filtrar las publicaciones por ID de usuario.
-|   |   |   |
-|---|---|---|
-| ![Imagen 1](https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/13046e0c-47d3-4870-b526-8f9788c2624a) | ![Imagen 2]([URL](https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/6943df1a-873e-4164-a0d0-b0612d0687e8)) |
+<p align="center">
+  <img src="https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/13046e0c-47d3-4870-b526-8f9788c2624a" alt="Busqueda 1">
+  <img src="https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/6943df1a-873e-4164-a0d0-b0612d0687e8" alt="Busqueda 2">
+</p>
+ 
 
 - Carga más publicaciones al desplazarte hasta el final de la lista.
 ![image](https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/3496c9ce-4399-49a0-aa72-14fce676b5d3)
