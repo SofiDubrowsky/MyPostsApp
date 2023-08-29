@@ -55,7 +55,9 @@ Alternativamente, puedes escanear el código QR a continuación utilizando la ap
 ## Uso
 
 - Abre la aplicación y explora la lista de publicaciones.
-![image](https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/68efcb03-b611-4ec5-868e-dfb19b0edde7)
+<p align="center">
+  <img src="https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/68efcb03-b611-4ec5-868e-dfb19b0edde7" alt="Lista">
+</p>
 
 - Utiliza la barra de búsqueda para filtrar las publicaciones por ID de usuario.
 <p align="center">
@@ -63,20 +65,27 @@ Alternativamente, puedes escanear el código QR a continuación utilizando la ap
   <img src="https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/6943df1a-873e-4164-a0d0-b0612d0687e8" alt="Busqueda 2">
 </p>
  
-
 - Carga más publicaciones al desplazarte hasta el final de la lista.
-![image](https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/3496c9ce-4399-49a0-aa72-14fce676b5d3)
+<p align="center">
+  <img src="https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/3496c9ce-4399-49a0-aa72-14fce676b5d3" alt="Ver mas">
+</p>
 
 - Toca una publicación para ver sus detalles.
-![image](https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/cac3106c-3744-4125-a01d-5660de5d12c8)
+<p align="center">
+  <img src="https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/cac3106c-3744-4125-a01d-5660de5d12c8" alt="Detalle">
+</p>
 
 ## Pantallas de Error 
 
 - En el caso de buscar un ID de usuario inexistente, se vera la siguiente respuesta:
-![image](https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/b73504a3-a95b-49db-abd9-c55feb22a75a)
+<p align="center">
+  <img src="https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/b73504a3-a95b-49db-abd9-c55feb22a75a" alt="Not Found">
+</p>
 
-- En situaciones donde pueda haber errores, como una mala respuesta de la API, se vera la siguiente respuesta: 
-![image](https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/ad31dd94-d5aa-41e9-ac9d-cce288f2cc23)
+- En situaciones donde pueda haber errores, como una mala respuesta de la API, se vera la siguiente respuesta:
+<p align="center">
+  <img src="https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/ad31dd94-d5aa-41e9-ac9d-cce288f2cc23" alt="Error">
+</p>
 
 ¡Disfruta explorando y descubriendo publicaciones con MyPostsApp! 🚀
 
