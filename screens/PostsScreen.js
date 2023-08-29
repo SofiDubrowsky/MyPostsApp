@@ -70,6 +70,7 @@ const PostsScreen = ({ navigation }) => {
 
   const renderPosts = () => {
     const visiblePosts = filterPostsByUserId();
+
     if (visiblePosts.length > 0) {
       return (
         <FlatList
@@ -82,13 +83,15 @@ const PostsScreen = ({ navigation }) => {
             />
           )}
           ListFooterComponent={
-            loadingMore ? (
-              <ActivityIndicator style={styles.loader} size="small" color="#8959dd" />
-            ) : (
-              <TouchableOpacity onPress={loadMorePosts} style={styles.viewMore}>
-                <Text style={styles.viewMoreText}>View More</Text>
-              </TouchableOpacity>
-            )
+            visiblePosts.length < posts.length ? (
+              loadingMore ? (
+                <ActivityIndicator style={styles.loader} size="small" color="#8959dd" />
+              ) : (
+                <TouchableOpacity onPress={loadMorePosts} style={styles.viewMore}>
+                  <Text style={styles.viewMoreText}>View More</Text>
+                </TouchableOpacity>
+              )
+            ) : null
           }
         />
       );
