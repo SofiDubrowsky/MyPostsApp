@@ -1,11 +1,16 @@
 {
   "expo": {
     "name": "MyPostsApp",
-    "slug": "MyPostsApp",
+    "slug": "mypostsapp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/MyPostApp.png",
     "userInterfaceStyle": "light",
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 0,
+      "useClassicUpdates":true
+    },
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -15,16 +20,24 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sofidubrowsky.mypostsapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sofidubrowsky.mypostsapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "88d001ea-cc62-4929-82dd-5f8386475dbe"
+      }
+    },
+    "owner": "sofidubrowsky"
   }
 }

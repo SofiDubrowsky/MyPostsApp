@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, ScrollView } from 'react-native'; // Importa ScrollView
+import { View, Text, Image, ScrollView } from 'react-native'; 
 import styles from '../styles';
 import { useNavigation } from '@react-navigation/native';
 import user1 from '../assets/user1.png';
@@ -31,11 +31,11 @@ const DetailsScreen = ({ route }) => {
       },
       headerTintColor: '#d4cffe', 
       headerTitleStyle: {
-        fontSize: 18, // Ajusta el tamaño de la letra según tu preferencia
-        marginLeft: -20, // Ajusta el margen izquierdo según tu preferencia
+        fontSize: 18, 
+        marginLeft: -20, 
       },
       headerLeftContainerStyle: {
-        marginLeft: 0, // Ajusta el margen izquierdo de la flecha según tu preferencia
+        marginLeft: 0, 
       },
     });
   }, [navigation, post.title]);

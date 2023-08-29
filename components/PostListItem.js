@@ -1,7 +1,7 @@
 import React from 'react';
-import { Text, TouchableOpacity, Image, View, Button } from 'react-native';
+import { Text, TouchableOpacity, Image, View} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import styles from '../styles'; // Importar los estilos
+import styles from '../styles'; 
 import user1 from '../assets/user1.png';
 import user2 from '../assets/user2.png';
 import user3 from '../assets/user3.png';
@@ -15,7 +15,7 @@ import user10 from '../assets/user10.png';
 
 const userImages = [user1, user2, user3, user4, user5, user6, user7, user8, user9, user10]
 
-const PostListItem = ({ post, onPress }) => {
+const PostListItem = ({ post }) => {
   const navigation = useNavigation();
 
   const userProfileImage = userImages[post.userId - 1];

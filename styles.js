@@ -1,12 +1,12 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  // Estilos para contenedor de pantalla
+
   container: {
     flex: 1,
     paddingBottom: 0,
     paddingTop: 0,
-    backgroundColor: "#fcfdff"
+    backgroundColor: "#fcfdff", 
 
   },
 
@@ -19,21 +19,18 @@ const styles = StyleSheet.create({
 
   },
 
-  // Estilos para títulos de posts
   postTitle: {
     fontSize: 16,
     fontWeight: 'bold',
     marginBottom: 8,
   },
 
-  // Estilos para extracto de posts
   postExcerpt: {
     fontSize: 14,
     marginBottom: 16,
     color: "#999"
   },
 
-  // Estilos para detalles de posts
   detailsTitle: {
     fontSize: 21,
     fontWeight: 'bold',
@@ -84,7 +81,6 @@ const styles = StyleSheet.create({
     elevation: 16,
   },
 
-  // Estilos para indicador de carga
   loadingIndicator: {
     flex: 1,
     justifyContent: 'center',
@@ -153,11 +149,12 @@ const styles = StyleSheet.create({
   loader: {
     marginTop: 10,
     marginBottom: 20,
+    alignSelf: "center", 
+    justifyContent: "center"
   },
 
   loaderList: {
     alignSelf: "center",
-    marginTop: 350
   },
 
   viewMore: {
@@ -219,6 +216,16 @@ const styles = StyleSheet.create({
     
   },
 
+  notFoundImg: {
+    width: 160,
+    height: 160,
+    marginTop: 10,
+    alignSelf: "center", 
+    padding: 10,
+    marginTop: 30
+    
+  },
+
   welcomeImg: {
     width: 80,
     height:80,
@@ -268,8 +275,13 @@ const styles = StyleSheet.create({
   },
 
   searchInput: {
-    marginLeft: 10
-  }
+    marginLeft: 10,
+    width: "100%"
+  },
+  centerContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 
 });
 

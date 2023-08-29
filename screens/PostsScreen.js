@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { TextInput, Image, View, FlatList, Button, ActivityIndicator, TouchableOpacity, Text } from 'react-native';
+import { TextInput, Image, View, FlatList, ActivityIndicator, TouchableOpacity, Text } from 'react-native';
 import PostListItem from '../components/PostListItem';
-import LoadingIndicator from '../components/LoadingIndicator';
-import styles from '../styles'; // Importar los estilos
+import styles from '../styles'; 
 import errorImg from "../assets/error.png"
 import reloadImg from "../assets/reload.png"
+import notFound from "../assets/notFound.png"
 import { FontAwesome } from 'react-native-vector-icons';
 
 const API_URL = 'https://jsonplaceholder.typicode.com/posts';
@@ -12,11 +12,10 @@ const API_URL = 'https://jsonplaceholder.typicode.com/posts';
 const PostsScreen = ({ navigation }) => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [loadedPosts, setLoadedPosts] = useState(10); // Inicialmente cargamos 10
-  const [loadingMore, setLoadingMore] = useState(false); // Estado de carga más posteos
+  const [loadedPosts, setLoadedPosts] = useState(10); 
+  const [loadingMore, setLoadingMore] = useState(false); 
   const [error, setError] = useState(false);
   const [searchUserId, setSearchUserId] = useState('');
-  const [userNotFound, setUserNotFound] = useState(false); 
 
   useEffect(() => {
     fetch(API_URL)
@@ -25,22 +24,21 @@ const PostsScreen = ({ navigation }) => {
         setPosts(data);
         setTimeout(() => {
           setLoading(false);
-        }, 1000); // Mostrar el loader por 1 segundo
+        }, 1000); 
       })
       .catch(error => {
         setError(true);
         setTimeout(() => {
           setLoading(false);
-        }, 1000); // Mostrar el loader por 1 segundo
+        }, 1000); 
       });
   }, []);
 
   const loadMorePosts = () => {
-    setLoadingMore(true); // Iniciar carga
-    // Simular retardo de carga (puedes quitarlo en tu aplicación real)
+    setLoadingMore(true); 
     setTimeout(() => {
       setLoadedPosts(prevLoadedPosts => prevLoadedPosts + 10);
-      setLoadingMore(false); // Finalizar carga
+      setLoadingMore(false); 
     }, 100);
   };
 
@@ -59,22 +57,20 @@ const PostsScreen = ({ navigation }) => {
           setError(true);
           setLoading(false);
         });
-    }, 1000); // Mostrar el loader por 1 segundo
+    }, 1000); 
   };
 
   const filterPostsByUserId = () => {
     if (searchUserId === '') {
-      // Si no hay valor de búsqueda, muestra todos los posteos
       return posts.slice(0, loadedPosts);
     } else {
-      // Filtra los posteos por el ID de usuario
       return posts.filter(post => post.userId.toString() === searchUserId).slice(0, loadedPosts);
     }
   };
 
   const renderPosts = () => {
     const visiblePosts = filterPostsByUserId();
-    if(visiblePosts.length > 0){
+    if (visiblePosts.length > 0) {
       return (
         <FlatList
           data={visiblePosts}
@@ -89,7 +85,6 @@ const PostsScreen = ({ navigation }) => {
             loadingMore ? (
               <ActivityIndicator style={styles.loader} size="small" color="#8959dd" />
             ) : (
-              // <Button title="View more" onPress={loadMorePosts} />
               <TouchableOpacity onPress={loadMorePosts} style={styles.viewMore}>
                 <Text style={styles.viewMoreText}>View More</Text>
               </TouchableOpacity>
@@ -98,12 +93,21 @@ const PostsScreen = ({ navigation }) => {
         />
       );
     } else {
-      return (<Text style={styles.errorMessage}>User not found</Text>)
+      return (<View style={styles.container}>
+
+        <Image source={notFound} style={styles.notFoundImg} />
+        <Text style={styles.errorMessage1}>
+          404
+        </Text>
+        <Text style={styles.errorMessage}>User not found</Text>
+      </View>)
     }
   };
 
   if (loading) {
-    return <ActivityIndicator size="big" color="#8959dd" style={styles.loaderList} />;
+    return <View style={[styles.container, styles.centerContainer]}>
+      <ActivityIndicator size="large" color="#8959dd" />
+    </View>;
   }
 
   if (error) {
@@ -133,6 +137,7 @@ const PostsScreen = ({ navigation }) => {
           value={searchUserId}
           onChangeText={text => setSearchUserId(text)}
           keyboardType="numeric"
+          caretHidden={true} 
         />
 
         <FontAwesome name="search" size={25} color="#d4cffe" style={styles.searchIcon} />

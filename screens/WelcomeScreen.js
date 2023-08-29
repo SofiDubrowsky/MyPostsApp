@@ -13,13 +13,17 @@ const WelcomeScreen = ({ navigation }) => {
         // Limpieza del temporizador al desmontar el componente
         return () => clearTimeout(timer);
       }, [navigation]);
-    
+
+      const goToDetail = () => {
+        navigation.navigate('Posts List');
+      };
 
   return (
     
       <View style={styles.containerWel}>
-        
+       <TouchableOpacity onPress={goToDetail}>
         <Image source={IconHeader} style={styles.welcomeImg} />
+        </TouchableOpacity> 
     
       </View>
     

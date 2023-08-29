@@ -31,7 +31,7 @@ const Navigation = () => {
             },
             headerTintColor: 'white',
             headerLeft: () => (
-              <Image source={IconHeader} style={{ marginLeft: 25, height: 30, width: 30, marginTop:5 }} /> // Aplica estilos según necesites
+              <Image source={IconHeader} style={{ marginLeft: 25, height: 30, width: 30, marginTop:5 }} /> 
             ),
           }}
         />
