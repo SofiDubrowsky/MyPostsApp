@@ -70,8 +70,11 @@ const PostsScreen = ({ navigation }) => {
 
   const renderPosts = () => {
     const visiblePosts = filterPostsByUserId();
-
+  
     if (visiblePosts.length > 0) {
+      const allPostsLoaded = visiblePosts.length === posts.length;
+      const allSearchResultsLoaded = searchUserId !== '' && visiblePosts.length === posts.filter(post => post.userId.toString() === searchUserId).length;
+  
       return (
         <FlatList
           data={visiblePosts}
@@ -83,7 +86,7 @@ const PostsScreen = ({ navigation }) => {
             />
           )}
           ListFooterComponent={
-            visiblePosts.length < posts.length ? (
+            (!allPostsLoaded && !allSearchResultsLoaded) ? (
               loadingMore ? (
                 <ActivityIndicator style={styles.loader} size="small" color="#8959dd" />
               ) : (
