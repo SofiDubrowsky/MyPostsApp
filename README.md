@@ -40,6 +40,7 @@ npm start
 
 Alternativamente, puedes escanear el código QR a continuación utilizando la aplicación Expo Go en tu dispositivo móvil para abrir la aplicación desplegada:
 
+![image](https://github.com/SofiDubrowsky/MyPostsApp/assets/94505828/e9d0b8b5-15b6-4c5d-9f66-d7997782fcbc)
 [Expo Deploy QR Code](https://expo.dev/@sofidubrowsky/mypostsapp?serviceType=classic&distribution=expo-go)
 
 ## Uso
