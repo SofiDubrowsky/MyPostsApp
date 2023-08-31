@@ -1,16 +1,16 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { View, Text, TouchableOpacity, Image} from 'react-native';
-import styles from '../styles'; // Importa tus estilos
+import styles from '../styles'; 
 import IconHeader from '../assets/IconHeader.png'
 
 const WelcomeScreen = ({ navigation }) => {
     useEffect(() => {
         const timer = setTimeout(() => {
-          navigation.navigate('Posts List'); // Navegar a la lista de posteos
-        }, 1500); // 1000 milisegundos = 1 segundo
+          navigation.navigate('Posts List'); 
+        }, 1500); 
     
-        // Limpieza del temporizador al desmontar el componente
+      
         return () => clearTimeout(timer);
       }, [navigation]);
 
