@@ -4,7 +4,8 @@
 
 ## Resumen
 
-MyPostsApp te permite explorar y buscar a través de una lista de publicaciones. Puedes filtrar las publicaciones por ID de usuario y cargar más publicaciones al desplazarte. Además, puedes ver los detalles de cada publicación, incluido el título y el contenido del cuerpo de la publicación.
+MyPostsApp te permite explorar y buscar a través de una lista de publicaciones. Puedes filtrar las publicaciones por ID de usuario y cargar más publicaciones al desplazarte. Además, puedes ver los detalles de cada publicación, incluido el título, el contenido del cuerpo de la publicación y el ID del usuario que lo creó.
+Se utilizó la API pública de JSONPlaceholder para obtener una lista de posts de prueba, para visualizar en la app: [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts)
 
 ## Comenzando
 
@@ -19,7 +20,7 @@ MyPostsApp te permite explorar y buscar a través de una lista de publicaciones.
 1. Clona este repositorio en tu máquina local:
 
 ```bash
-git clone [https://github.com/SofiDubrowsky/MyPostsApp.git](https://github.com/SofiDubrowsky/MyPostsApp.git)
+git clone https://github.com/SofiDubrowsky/MyPostsApp.git
 ```
 
 2. Ve al directorio del proyecto:
